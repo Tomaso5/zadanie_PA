@@ -1,5 +1,28 @@
 # obchod s elektronikou
+#Vytvorte triedu Produkt, ktorá obsahuje:
 
+#Produkty
+
+#Každý produkt má názov, cenu a množstvo na sklade.
+#Produkty môžu byť rôzne.
+#Elektronické produkty majú navyše dĺžku záruky (v rokoch).
+#Program musí vedieť produkty vypísať – pri elektronike vypísať aj záruku.
+#Obchod
+#Obchod musí uchovávať zoznam všetkých produktov a zoznam predajov, ktoré sa uskutočnili.
+#Mal by obsahovať funkcie na:
+#pridanie produktu do obchodu
+#vypísanie všetkých produktov
+#predaj produktu – pri predaji sa zníži počet kusov na sklade, môže sa uplatniť zľava v percentách, a predaj sa zaznamená do zoznamu predajov
+#vypísanie všetkých predajov – zobrazí sa názov predaného produktu, počet kusov a celková suma predaja
+#výpočet celkového obratu – spočíta sa suma všetkých predajov
+#Program
+#V hlavnej časti programu vytvorte niekoľko elektronických produktov (notebook, myš, monitor).
+#Vytvorte obchod a pridajte produkty do jeho zoznamu.
+#Vypíšte všetky produkty.
+#Realizujte niekoľko predajov, niektoré s uplatnenou zľavou, iné bez zľavy.
+#Nakoniec vypíšte zoznam predajov a celkový obrat obchodu.
+
+#-----------------------------------------------------------
 class Produkt:
     def __init__(self, nazov, cena, sklad):
         self.nazov = nazov
@@ -81,3 +104,4 @@ obchod.predaj(p3, 2)
 # výpis predajov a obrat
 obchod.vypis_predaje()
 obchod.celkovy_obrat()
+
